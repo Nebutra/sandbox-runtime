@@ -1,0 +1,64 @@
+{
+  "name": "@nebutra/sandbox-runtime",
+  "version": "0.1.4",
+  "description": "Unified sandbox runtime router for local and remote execution providers",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "nebutra": {
+    "featureId": "sandbox-runtime",
+    "category": "ai",
+    "surface": "execution-router",
+    "summary": "Sandbox trait, provider router, doctor, and debug tools"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nebutra/capability-kit": "file:./vendor/nebutra__capability-kit",
+    "@nebutra/errors": "file:./vendor/nebutra__errors",
+    "p-limit": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.4"
+  },
+  "homepage": "https://github.com/Nebutra/sandbox-runtime#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nebutra/sandbox-runtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nebutra/sandbox-runtime/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "nebutraMirror": {
+    "sourceRepository": "Nebutra/Nebutra-Sailor",
+    "sourceDirectory": "packages/ai/sandbox-runtime",
+    "sourcePackage": "@nebutra/sandbox-runtime",
+    "sourceSha": "5030c0e24759a16ed97ce1f1b5083d6b63106985",
+    "canonicalSource": "monorepo"
+  },
+  "packageManager": "pnpm@10.32.1"
+}
